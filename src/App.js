@@ -3,8 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./ui/Footer";
 import HomePage from "./ui/HomePage";
 import Navbar from "./ui/Navbar";
-// import FeaturesPage from "./ui/FeaturesPage";
-// import PricingPage from "./ui/PricingPage";
+import Location from "./pages/Location";
 
 function App() {
   return (
@@ -14,9 +13,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
-
-          {/* <Route path="/features" element={<FeaturesPage />} />
-          <Route path="/pricing" element={<PricingPage />} /> */}
+          <Route path="//hours-location" element={<Location />} />
         </Routes>
         <Footer />
       </div>

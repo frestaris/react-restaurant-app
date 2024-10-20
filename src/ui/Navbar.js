@@ -41,7 +41,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/hours&location"
+              to="/hours-location"
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }

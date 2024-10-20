@@ -1,0 +1,23 @@
+.location-title {
+  letter-spacing: 0.5rem;
+  padding: 20px 0;
+}
+.location-address {
+  line-height: 0;
+  color: rgb(36, 24, 24);
+}
+.location-address:hover {
+  color: #1c2c59;
+}
+.location-address a:visited,
+.location-address a:active {
+  color: #1c2c59;
+}
+
+.location-opening-info {
+  font-weight: bold;
+  padding-top: 20px;
+}
+.location-description {
+  padding: 20px 0;
+}
