@@ -1,0 +1,134 @@
+.navbar {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: -20px;
+  z-index: 1000;
+  border-bottom: 3px solid rgb(107, 107, 107);
+}
+
+.collapsed-menu {
+  display: none;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  transition: width 0.5s ease, left 0.5s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+}
+
+.ham-menu {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin-bottom: 5px;
+  transition: transform 0.3s, opacity 0.3s;
+  border-radius: 50px;
+}
+
+.ham-menu.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.ham-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 650px) {
+  .collapsed-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ham-menu {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .nav-item {
+    margin: 15px 0;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  .nav-link.active::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
