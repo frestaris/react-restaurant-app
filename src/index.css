@@ -1,8 +1,11 @@
 :root {
   --primary-color: #1c2c59;
   --secondary-color: #f5f3ec;
+  --tertiary-color: #c3986d;
 }
-
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
@@ -31,7 +34,6 @@ body {
   height: 100%;
   overflow-y: auto;
   padding: 0 20px;
-  box-sizing: border-box;
   border-radius: 0;
   mask: radial-gradient(20px at 40px 40px, transparent 98%, black) -40px -40px;
 }

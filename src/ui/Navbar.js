@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logoPic from "../assets/hero-pic1.png";
+
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -16,7 +18,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="collapsed-menu">
-        <div className="logo">Logo</div>
+        <NavLink to="/">
+          <div className="logo">
+            <img src={logoPic} alt="logo-pic" />
+          </div>
+        </NavLink>
         <div
           className={`ham-menu ${isMenuOpen ? "open" : ""}`}
           onClick={toggleMenu}

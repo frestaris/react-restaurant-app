@@ -11,6 +11,12 @@
   border-bottom: 3px solid rgb(107, 107, 107);
 }
 
+.logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
 .collapsed-menu {
   display: none;
   width: 100%;
@@ -93,7 +99,9 @@
     justify-content: space-between;
     align-items: center;
   }
-
+  .navbar {
+    padding: 5px;
+  }
   .ham-menu {
     display: block;
   }

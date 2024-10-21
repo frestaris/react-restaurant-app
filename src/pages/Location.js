@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Location.css";
 import Carousel from "../helpers/Carousel";
 import locationPic1 from "../assets/location-pic-1.jpg";
 import locationPic2 from "../assets/location-pic-2.jpg";
 import locationPic3 from "../assets/location-pic-3.jpg";
 import { Link } from "react-router-dom";
+import { usePageContext } from "../contexts/PageContext";
 
 const locationImages = [locationPic1, locationPic2, locationPic3];
 
 function Location() {
+  const { setPageTitle } = usePageContext();
+
+  useEffect(() => {
+    setPageTitle("Hours & Location");
+  }, [setPageTitle]);
+
   return (
     <div>
       <Carousel images={locationImages} intervalTime={4000} />
