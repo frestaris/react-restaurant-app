@@ -10,11 +10,12 @@ import { usePageContext } from "../contexts/PageContext";
 const locationImages = [locationPic1, locationPic2, locationPic3];
 
 function Location() {
-  const { setPageTitle } = usePageContext();
+  const { setPageTitle, scrollToTop } = usePageContext();
 
   useEffect(() => {
     setPageTitle("Hours & Location");
-  }, [setPageTitle]);
+    scrollToTop();
+  }, [setPageTitle, scrollToTop]);
 
   return (
     <div>

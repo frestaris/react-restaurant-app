@@ -9,8 +9,12 @@ export const usePageContext = () => {
 export const PageProvider = ({ children }) => {
   const [pageTitle, setPageTitle] = useState("Restaurant");
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <PageContext.Provider value={{ pageTitle, setPageTitle }}>
+    <PageContext.Provider value={{ pageTitle, setPageTitle, scrollToTop }}>
       {children}
     </PageContext.Provider>
   );

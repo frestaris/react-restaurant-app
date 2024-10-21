@@ -1,20 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Routes, Route } from "react-router-dom";
+
+import { usePageContext } from "./contexts/PageContext";
+import ScrollToTop from "./helpers/ScrollToTop";
+
 import Footer from "./ui/Footer";
-import HomePage from "./ui/HomePage";
+import HomePage from "./pages/HomePage";
 import Navbar from "./ui/Navbar";
 import Location from "./pages/Location";
-import { usePageContext } from "./contexts/PageContext";
 
 function App() {
   const { pageTitle, setPageTitle } = usePageContext();
+  const contentRef = useRef(null);
+
   useEffect(() => {
     document.title = `Restaurant | ${pageTitle}`;
   }, [pageTitle]);
 
   return (
     <div className="container">
-      <div className="content">
+      <div className="content" ref={contentRef}>
+        <ScrollToTop contentRef={contentRef} />
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />

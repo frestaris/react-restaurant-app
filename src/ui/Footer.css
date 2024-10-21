@@ -4,6 +4,25 @@
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
   border-top: 3px solid rgb(107, 107, 107);
+}
+.footer ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  list-style: none;
+  padding: 0;
+  margin: 0 10px;
+}
+.social-media-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.1);
 }
