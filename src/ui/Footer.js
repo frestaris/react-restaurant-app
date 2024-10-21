@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import twitterIcon from "../assets/twitter-icon.png";
-import facebookIcon from "../assets/facebook-icon.png";
-import instagramIcon from "../assets/instagram-icon.png";
-import pinterestIcon from "../assets/pinterest-icon.png";
+import twitterIcon from "../assets/icons-logo/twitter-icon.png";
+import facebookIcon from "../assets/icons-logo/facebook-icon.png";
+import instagramIcon from "../assets/icons-logo/instagram-icon.png";
+import pinterestIcon from "../assets/icons-logo/pinterest-icon.png";
 
 function Footer() {
   return (

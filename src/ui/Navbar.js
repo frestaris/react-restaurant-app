@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logoPic from "../assets/hero-pic1.png";
+import logoPic from "../assets/icons-logo/hero-pic1.png";
 
 import "./Navbar.css";
 

@@ -6,10 +6,10 @@ import "./HomePage.css";
 
 import Button from "../helpers/Button";
 
-import logoPic from "../assets/hero-pic.png";
-import menuPic1 from "../assets/menu-icon-homepage-Copy.webp";
-import menuPic2 from "../assets/happenings-icon.jpg";
-import bottomPic from "../assets/bottom-icon.jpg";
+import logoPic from "../assets/icons-logo/hero-pic.png";
+import menuPic1 from "../assets/icons-logo/menu-icon-homepage-Copy.webp";
+import menuPic2 from "../assets/icons-logo/happenings-icon.jpg";
+import bottomPic from "../assets/icons-logo/bottom-icon.jpg";
 
 function HomePage() {
   const { setPageTitle } = usePageContext();
