@@ -30,6 +30,12 @@
   white-space: nowrap;
 }
 
+.button.small {
+  font-size: 0.8rem;
+  padding: 10px;
+  margin-top: 0;
+}
+
 .button:before {
   animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;

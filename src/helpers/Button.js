@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import "./Button.css";
 
-function Button({ children, disabled, to, onClick }) {
-  const buttonClasses = "button" + (disabled ? " disabled" : "");
+function Button({ children, disabled, to, onClick, type }) {
+  const buttonClasses =
+    `button ${type === "small" ? "small" : ""}` + (disabled ? " disabled" : "");
 
   if (to) {
     return (

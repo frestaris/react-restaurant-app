@@ -97,6 +97,9 @@
   .about-us-text {
     margin: 50px 50px;
   }
+  .crew-box img {
+    height: 200px;
+  }
 }
 
 /* TESTIMONIALS */
