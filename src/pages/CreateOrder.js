@@ -56,8 +56,6 @@ const CreateOrder = () => {
       totalPrice: totalCartPrice.toFixed(2),
     };
 
-    console.log("Email Params: ", emailParams);
-
     emailjs
       .send(
         "service_peq8stj",

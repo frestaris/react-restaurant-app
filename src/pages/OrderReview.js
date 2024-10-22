@@ -29,7 +29,10 @@ const OrderReview = () => {
 
       <ul className="order-list">
         {cartItems.map((item) => (
-          <li key={item.id} className="cart-item">
+          <li
+            key={`${item.categoryId}-${item.contentId}`}
+            className="cart-item"
+          >
             <div className="cart-item-info">
               <div className="cart-item-info-top">
                 <div className="item-details">

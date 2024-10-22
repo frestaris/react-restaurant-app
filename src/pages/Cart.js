@@ -5,8 +5,8 @@ import {
   clearCart,
   decreaseItemQuantity,
   increaseItemQuantity,
+  getCart,
 } from "../slices/CartSlice";
-import { getCart } from "../slices/CartSlice";
 import "./Cart.css";
 import Button from "../helpers/Button";
 import { usePageContext } from "../contexts/PageContext";
@@ -28,7 +28,10 @@ const Cart = () => {
       ) : (
         <ul className="cart-items-list">
           {cartItems.map((item) => (
-            <li key={item.id} className="cart-item">
+            <li
+              key={`${item.categoryId}-${item.contentId}`}
+              className="cart-item"
+            >
               <div className="cart-item-info">
                 <div className="cart-item-info-top">
                   <div className="item-details">
