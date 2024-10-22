@@ -15,9 +15,11 @@ function CartOverview() {
         <span className="cart-overview-quantity">
           {totalCartQuantity} items
         </span>
-        <span className="cart-overview-price">$ {totalCartPrice}</span>
+        <span className="cart-overview-price">
+          $ {totalCartPrice.toFixed(2)}
+        </span>
       </p>
-      <Link to="/order" className="cart-overview-link">
+      <Link to="/cart" className="cart-overview-link">
         Open cart &rarr;
       </Link>
     </div>

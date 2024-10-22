@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   deleteItem,
@@ -9,10 +9,16 @@ import {
 import { getCart } from "../slices/CartSlice";
 import "./Cart.css";
 import Button from "../helpers/Button";
+import { usePageContext } from "../contexts/PageContext";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector(getCart);
+  const { setPageTitle } = usePageContext();
+
+  useEffect(() => {
+    setPageTitle("Cart");
+  }, [setPageTitle]);
 
   return (
     <div className="cart-container">

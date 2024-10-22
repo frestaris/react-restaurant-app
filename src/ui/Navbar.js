@@ -80,13 +80,13 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/order"
+              to="/cart"
               className={({ isActive }) =>
                 isActive ? "nav-link active" : "nav-link"
               }
               onClick={closeMenu}
             >
-              Order
+              Cart
             </NavLink>
           </li>
         </ul>

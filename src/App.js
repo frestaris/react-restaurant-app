@@ -32,9 +32,9 @@ function App() {
           <Route path="/hours-location" element={<Location />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/menus" element={<Menu />} />
-          <Route path="/order" element={<Cart />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
-        {location.pathname !== "/order" && <CartOverview />}
+        {location.pathname !== "/cart" && <CartOverview />}
         <Footer />
       </div>
     </div>

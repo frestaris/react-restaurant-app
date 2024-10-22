@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import menuData from "../helpers/data";
 import MenuItem from "./MenuItem";
+import { usePageContext } from "../contexts/PageContext";
 
 const Menu = () => {
   const [activeTab, setActiveTab] = useState(menuData[0].id);
+  const { setPageTitle } = usePageContext();
+  useEffect(() => {
+    setPageTitle("Menus");
+  }, [setPageTitle]);
 
   return (
     <div className="menu">
