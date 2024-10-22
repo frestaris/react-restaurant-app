@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./Location.css";
 import Carousel from "../helpers/Carousel";
-import locationPic1 from "../assets/location-pic-1.jpg";
-import locationPic2 from "../assets/location-pic-2.jpg";
-import locationPic3 from "../assets/location-pic-3.jpg";
+import locationPic1 from "../assets/location-pic-1.webp";
+import locationPic2 from "../assets/location-pic-2.webp";
+import locationPic3 from "../assets/location-pic-3.webp";
 import { Link } from "react-router-dom";
 import { usePageContext } from "../contexts/PageContext";
 

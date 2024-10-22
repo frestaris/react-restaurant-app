@@ -1,10 +1,10 @@
-import pizzaPicMenu from "../assets/Menus/pizza-pic-menu.jpg";
-import entreesPicMenu from "../assets/Menus/entrees-pic-menu.jpg";
-import saladsPicMenu from "../assets/Menus/salads-pic-menu.jpg";
-import mainPicMenu from "../assets/Menus/main-pic-menu.jpg";
-import drinksPicMenu from "../assets/Menus/drinks-pic-menu.jpg";
-import dessertPicMenu from "../assets/Menus/dessert-pic-menu.jpg";
-import specialsPicMenu from "../assets/Menus/specials-pic-menu.jpg";
+import pizzaPicMenu from "../assets/Menus/pizza-pic-menu.webp";
+import entreesPicMenu from "../assets/Menus/entrees-pic-menu.webp";
+import saladsPicMenu from "../assets/Menus/salads-pic-menu.webp";
+import mainPicMenu from "../assets/Menus/main-pic-menu.webp";
+import drinksPicMenu from "../assets/Menus/drinks-pic-menu.webp";
+import dessertPicMenu from "../assets/Menus/dessert-pic-menu.webp";
+import specialsPicMenu from "../assets/Menus/specials-pic-menu.webp";
 
 const menuData = [
   {

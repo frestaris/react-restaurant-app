@@ -11,6 +11,7 @@ import Location from "./pages/Location";
 import AboutUs from "./pages/AboutUs";
 import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
+import CartOverview from "./pages/CartOverview";
 
 function App() {
   const { pageTitle, setPageTitle } = usePageContext();
@@ -32,6 +33,7 @@ function App() {
           <Route path="/menus" element={<Menu />} />
           <Route path="/order" element={<Cart />} />
         </Routes>
+        <CartOverview />
         <Footer />
       </div>
     </div>

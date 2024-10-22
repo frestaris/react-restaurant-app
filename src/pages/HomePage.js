@@ -8,8 +8,8 @@ import Button from "../helpers/Button";
 
 import logoPic from "../assets/icons-logo/hero-pic.png";
 import menuPic1 from "../assets/icons-logo/menu-icon-homepage-Copy.webp";
-import menuPic2 from "../assets/icons-logo/happenings-icon.jpg";
-import bottomPic from "../assets/icons-logo/bottom-icon.jpg";
+import menuPic2 from "../assets/icons-logo/happenings-icon.webp";
+import bottomPic from "../assets/icons-logo/bottom-icon.webp";
 
 function HomePage() {
   const { setPageTitle } = usePageContext();
