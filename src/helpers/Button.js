@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import "./Button.css";
 
-function Button({ children, disabled, to, onClick, type }) {
+function Button({ children, disabled, to, onClick, type, className }) {
   const buttonClasses =
-    `button ${type === "small" ? "small" : ""}` + (disabled ? " disabled" : "");
+    `button ${type === "small" ? "small" : ""} ${
+      type === "rounded" ? "rounded" : ""
+    } ${type === "normal" ? "normal" : ""}` +
+    (disabled ? " disabled" : "") +
+    (className ? ` ${className}` : "");
 
   if (to) {
     return (

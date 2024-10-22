@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import { usePageContext } from "./contexts/PageContext";
 import ScrollToTop from "./helpers/ScrollToTop";
@@ -16,6 +16,7 @@ import CartOverview from "./pages/CartOverview";
 function App() {
   const { pageTitle, setPageTitle } = usePageContext();
   const contentRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
     document.title = `Restaurant | ${pageTitle}`;
@@ -33,7 +34,7 @@ function App() {
           <Route path="/menus" element={<Menu />} />
           <Route path="/order" element={<Cart />} />
         </Routes>
-        <CartOverview />
+        {location.pathname !== "/order" && <CartOverview />}
         <Footer />
       </div>
     </div>

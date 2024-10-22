@@ -37,7 +37,9 @@ function HomePage() {
           spot for weekend brunch in Denver. Whether you're indulging in a
           family-friendly brunch or seeking the perfect brunch spot for a lazy
           Sunday, The Restaurant's unique menu caters to all.
-          <Button to="/menus">View Menu</Button>
+          <Button type="normal" to="/menus">
+            View Menu
+          </Button>
         </div>
       </div>
       <div className="mid-section">
@@ -72,13 +74,17 @@ function HomePage() {
             not just a meal, but an OG experience. Don’t miss out – book your
             table today and follow us on Instagram for daily inspirations and
             surprises!
-            <Button to="/menus">View happenings</Button>
+            <Button type="normal" to="/menus">
+              View happenings
+            </Button>
           </div>
           <img src={menuPic2} alt="menu-pic" />
         </div>
         <img className="bottom-pic" src={bottomPic} alt={bottomPic} />
       </div>
-      <Button to="/sign-up">subscribe</Button>
+      <Button type="normal" to="/sign-up">
+        subscribe
+      </Button>
     </section>
   );
 }
