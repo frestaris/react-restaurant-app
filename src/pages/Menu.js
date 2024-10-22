@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import menuData from "../helpers/data";
-import Button from "../helpers/Button";
-import "./Menu.css";
+import MenuItem from "./MenuItem";
 
-function Menu() {
+const Menu = () => {
   const [activeTab, setActiveTab] = useState(menuData[0].id);
 
   return (
-    <main>
-      <h2 className="menu-headline">Our Menus</h2>
+    <div className="menu">
+      <h2>Menu</h2>
       <section className="menu-tabs-row">
         {menuData.map((tab) => (
           <div
@@ -31,31 +30,23 @@ function Menu() {
         {menuData.map((tab) =>
           activeTab === tab.id ? (
             <div key={tab.id} className="menu-content">
-              <span className="menu-content-title">{tab.title}</span>
+              <h3>{tab.title}</h3>
               <ul>
-                {Object.entries(tab.content).map(([key, item]) => (
-                  <li className="item-list" key={key}>
-                    <div className="item-details">
-                      <p className="item-name">{item.name}</p>
-                      <p className="item-ingredients">
-                        {item.ingredients.join(", ")}
-                      </p>
-                    </div>
-                    <div className="price-and-button">
-                      <p className="item-price">${item.price.toFixed(2)}</p>
-                      <div className="add-to-cart-button">
-                        <Button type="small">Add to Cart</Button>
-                      </div>
-                    </div>
-                  </li>
+                {Object.entries(tab.content).map(([contentId, item]) => (
+                  <MenuItem
+                    item={item}
+                    key={contentId}
+                    categoryId={tab.id}
+                    contentId={contentId}
+                  />
                 ))}
               </ul>
             </div>
           ) : null
         )}
       </section>
-    </main>
+    </div>
   );
-}
+};
 
 export default Menu;

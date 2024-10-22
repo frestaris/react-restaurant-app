@@ -4,14 +4,18 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import { PageProvider } from "./contexts/PageContext";
+import { Provider } from "react-redux";
+import store from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <PageProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </PageProvider>
+    <Provider store={store}>
+      <PageProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </PageProvider>
+    </Provider>
   </React.StrictMode>
 );

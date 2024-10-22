@@ -14,6 +14,7 @@
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
+  margin-bottom: 50px;
 }
 
 .menu-tab {
@@ -146,4 +147,28 @@
   font-size: 1rem;
   font-weight: bold;
   color: var(--primary-color);
+}
+.add-to-cart-buttons {
+  display: flex;
+  align-items: center;
+}
+.quantity-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  transition: ease-in-out 0.3s;
+  margin-right: 10px;
+}
+.quantity-info {
+  margin-right: 10px;
+}
+.quantity-button:hover {
+  transform: scale(1.1);
 }
