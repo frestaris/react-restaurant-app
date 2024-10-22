@@ -6,6 +6,9 @@
   line-height: 0;
   color: rgb(36, 24, 24);
 }
+.location-phone {
+  padding: 10px 0;
+}
 .location-address:hover {
   color: #1c2c59;
 }

@@ -78,17 +78,6 @@ const Navbar = () => {
               About Us
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink
-              to="/cart"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-              onClick={closeMenu}
-            >
-              Cart
-            </NavLink>
-          </li>
         </ul>
       </div>
     </nav>

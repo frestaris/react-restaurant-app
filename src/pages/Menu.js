@@ -35,7 +35,7 @@ const Menu = () => {
         {menuData.map((tab) =>
           activeTab === tab.id ? (
             <div key={tab.id} className="menu-content">
-              <h3>{tab.title}</h3>
+              <h3 className="title-section-menu">{tab.title}</h3>
               <ul>
                 {Object.entries(tab.content).map(([contentId, item]) => (
                   <MenuItem

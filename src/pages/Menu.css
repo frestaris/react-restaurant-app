@@ -99,6 +99,12 @@
 
 /* MENU CONTENT SECTION */
 
+.title-section-menu {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Great Vibes", cursive;
+}
+
 .menu-content {
   margin-bottom: 20px;
 }

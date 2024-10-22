@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Location.css";
 import Carousel from "../helpers/Carousel";
 import locationPic1 from "../assets/location-pic-1.webp";
@@ -11,11 +11,29 @@ const locationImages = [locationPic1, locationPic2, locationPic3];
 
 function Location() {
   const { setPageTitle, scrollToTop } = usePageContext();
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setPageTitle("Hours & Location");
     scrollToTop();
+    checkOpenStatus();
   }, [setPageTitle, scrollToTop]);
+
+  const checkOpenStatus = () => {
+    const now = new Date();
+    const currentHour = now.getHours();
+
+    const openingHour = 7;
+    const closingHour = 15;
+
+    if (currentHour >= openingHour && currentHour < closingHour) {
+      setIsOpen(true);
+      console.log("The restaurant is OPEN now.");
+    } else {
+      setIsOpen(false);
+      console.log("The restaurant is CLOSED now.");
+    }
+  };
 
   return (
     <div>
@@ -24,25 +42,26 @@ function Location() {
 
       <div className="location-address">
         <Link to="https://www.google.com/maps/place/70%C2%B003'33.6%22S+96%C2%B012'06.8%22E/@-70.059323,96.1993071,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-70.059323!4d96.201882?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">
-          <p>1234 56th St,</p> <p>Nowhere,WA 82394</p>
+          <p>1234 56th St,</p> <p>Nowhere, WA 82394</p>
         </Link>
+        <p className="location-phone">+12 345 56789</p>
       </div>
       <p className="location-opening-info">OPEN EVERY DAY OF THE WEEK!</p>
-      <p className="location-opening-time">
-        7am - 3pm(dinamically add if we open or not according to the time)
+      <p className="location-opening-time">7am - 3pm</p>
+      <p className="location-opening-info">
+        {isOpen ? "OPEN NOW" : "CLOSED NOW"}
       </p>
       <p className="location-description">
-        Located in the heart of Nowhere's bustling McGregor Square, The
-        Original, fondly known by locals as "The OG," redefines the brunch
-        experience. Renowned as a premier brunch destination in Nowhere, The OG
-        excels in crafting exquisite breakfast, lunch and brunch dishes. As a
-        celebrated brunch spot near Coors Field, we pride ourselves on being
-        pioneers in the culinary scene, offering an unforgettable dining
-        experience. Whether you're seeking the best brunch in Nowhere, a
-        delightful breakfast near Coors Field, or a lunch spot that combines
-        innovation with classic flavors, The OG stands as your go-to
-        destination. Join us at The OG, where every dish is a testament to our
-        passion for exceptional brunch experiences.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        debitis delectus fugiat necessitatibus ex quod ullam, ipsa totam
+        possimus dolores quasi ea quaerat eos consectetur quisquam a distinctio
+        corporis non. Quidem iure harum accusantium nisi expedita provident
+        fugiat ut quibusdam accusamus? Debitis ipsam aut facere explicabo velit
+        reprehenderit officia, minima porro possimus? Doloremque distinctio
+        quidem delectus, obcaecati unde eius tenetur! Voluptas quasi amet
+        repellendus dolor, qui dolores labore at, nulla quas soluta numquam
+        necessitatibus magni ullam porro omnis illum. Adipisci quasi ullam unde,
+        excepturi tenetur necessitatibus? Assumenda facere ipsa et.
       </p>
       <div>
         <iframe

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
 :root {
   --primary-color: #1c2c59;
   --secondary-color: #f5f3ec;
@@ -12,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 .container {
   position: fixed;

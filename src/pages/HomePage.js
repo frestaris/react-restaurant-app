@@ -21,22 +21,18 @@ function HomePage() {
   return (
     <section className="hero">
       <div className="top-section">
-        <h1>RESTAURANT NAME</h1>
+        <h1>RESTAURANT</h1>
         <img src={logoPic} alt="header-pic" className="header-pic" />
       </div>
       <div className="menu-section">
         <img src={menuPic1} alt="menu-pic" />
         <div className="menu-description-box">
           <h3>OUR MENUS</h3>
-          The Restaurant is where culinary innovation meets the timeless charm
-          of breakfast and lunch classics. Our menu, a treasure trove of gourmet
-          pancakes, artisanal breakfast cocktails, and the best mimosas in
-          Denver, promises an unrivaled dining experience. <br /> Savor the
-          flavors of Denver from decadent French toast to savory benedicts, each
-          dish at The Restaurant is crafted to perfection, making us the go-to
-          spot for weekend brunch in Denver. Whether you're indulging in a
-          family-friendly brunch or seeking the perfect brunch spot for a lazy
-          Sunday, The Restaurant's unique menu caters to all.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          sed nemo culpa rerum blanditiis necessitatibus corrupti. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Ullam libero enim
+          dolorem, beatae distinctio esse in expedita possimus nam id cum
+          nesciunt a eum, illo magni, odit aspernatur placeat quibusdam.
           <Button type="normal" to="/menus">
             View Menu
           </Button>
@@ -47,33 +43,29 @@ function HomePage() {
           <Link to="/hours-location" style={{ textDecoration: "none" }}>
             <div className="box">THE TIME AND THE PLACE</div>
           </Link>
-          <Link to="/b" style={{ textDecoration: "none" }}>
+          <Link to="/menus" style={{ textDecoration: "none" }}>
             <div className="box">HEY HUNGRY PEOPLE</div>
           </Link>
-          <Link to="/c" style={{ textDecoration: "none" }}>
-            <div className="box">HEY HUNGRY PEOPLE</div>
+          <Link to="/about-us" style={{ textDecoration: "none" }}>
+            <div className="box">GET TO KNOW US</div>
           </Link>
         </div>
         <div className="mid-section-text">
-          Welcome to The OG, nestled in the vibrant heart of McGregor Square, a
-          stone's throw away from the iconic Coors Field. As one of Denver's top
-          brunch destinations we're delighted to offer a unique twist on the
-          classics and innovative dishes, perfectly paired with our signature
-          mimosas and local coffee.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi
+          eos, omnis cupiditate facere voluptatem provident dignissimos
+          temporibus quisquam laborum dicta earum, magni amet aut blanditiis
+          enim. Maiores, ea tempore.
         </div>
         <div className="menu-mid-section">
           <div className="menu-mid-description-box">
             <h3>Happenings</h3>
-            Stay tuned to our website and social media for the latest happenings
-            and exclusive events at The OG, the heart of Denver's dynamic brunch
-            and dining scene. Indulge in our themed brunches, relish our monthly
-            specials, and join us in giving back to the community. There’s
-            always something new and exciting to look forward to. Whether you’re
-            a local foodie or a visitor exploring the wonders of Denver, our
-            doors are always open, inviting you to a place where every brunch is
-            not just a meal, but an OG experience. Don’t miss out – book your
-            table today and follow us on Instagram for daily inspirations and
-            surprises!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
+            voluptate illo! Sapiente, expedita ipsam! Tempore, repellendus.
+            Voluptatem totam numquam, rerum est libero commodi sit fugit nihil
+            assumenda velit fugiat eos. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Vel consectetur corporis a labore accusantium
+            adipisci sit, deserunt quia non illum praesentium similique error
+            blanditiis excepturi placeat aspernatur velit ea ad.
             <Button type="normal" to="/menus">
               View happenings
             </Button>

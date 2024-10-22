@@ -16,7 +16,9 @@
 .header-pic {
   height: 300px;
 }
-
+.top-section h1 {
+  font-size: 2rem;
+}
 .menu-section,
 .menu-mid-section {
   display: flex;
