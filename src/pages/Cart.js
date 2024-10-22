@@ -70,7 +70,7 @@ const Cart = () => {
 
                 <div className="delete-button-cart">
                   <Button
-                    type="rounded"
+                    type="delete"
                     onClick={() =>
                       dispatch(
                         deleteItem({
@@ -95,7 +95,7 @@ const Cart = () => {
           </Button>
           <Button
             className="clear-cart-button"
-            type="small"
+            type="delete"
             onClick={() => dispatch(clearCart())}
           >
             Clear Cart

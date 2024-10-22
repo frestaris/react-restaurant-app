@@ -12,9 +12,11 @@ import AboutUs from "./pages/AboutUs";
 import Menu from "./pages/Menu";
 import Cart from "./pages/Cart";
 import CartOverview from "./pages/CartOverview";
+import CreateOrder from "./pages/CreateOrder";
+import OrderReview from "./pages/OrderReview";
 
 function App() {
-  const { pageTitle, setPageTitle } = usePageContext();
+  const { pageTitle } = usePageContext();
   const contentRef = useRef(null);
   const location = useLocation();
 
@@ -33,8 +35,12 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/menus" element={<Menu />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/order/new" element={<CreateOrder />} />
+          <Route path="/order/review" element={<OrderReview />} />
         </Routes>
-        {location.pathname !== "/cart" && <CartOverview />}
+        {location.pathname !== "/cart" &&
+          location.pathname !== "/order/review" &&
+          location.pathname !== "/order/new" && <CartOverview />}
         <Footer />
       </div>
     </div>

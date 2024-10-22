@@ -59,7 +59,7 @@ const MenuItem = ({ categoryId, contentId, item }) => {
                 +
               </button>
               <Button
-                type="small"
+                type="delete"
                 onClick={() => dispatch(deleteItem({ categoryId, contentId }))}
               >
                 Delete

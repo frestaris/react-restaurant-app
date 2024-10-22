@@ -4,7 +4,7 @@ import "./Button.css";
 function Button({ children, disabled, to, onClick, type, className }) {
   const buttonClasses =
     `button ${type === "small" ? "small" : ""} ${
-      type === "rounded" ? "rounded" : ""
+      type === "delete" ? "delete" : ""
     } ${type === "normal" ? "normal" : ""}` +
     (disabled ? " disabled" : "") +
     (className ? ` ${className}` : "");

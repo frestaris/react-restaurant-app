@@ -2,6 +2,7 @@
   border: 2px solid var(--primary-color);
   box-sizing: border-box;
   color: var(--primary-color);
+  background-color: var(--secondary-color);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -10,9 +11,6 @@
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1em;
-  /* width: 40%;
-  max-width: 300px;
-  min-width: 150px; */
   margin-top: 10px;
   padding: 1.5em 2.2em;
   position: relative;
@@ -40,17 +38,8 @@
   width: 100px;
 }
 
-.button.rounded {
-  width: 100px;
-  font-size: 0.8rem;
-  padding: 10px;
-  margin-top: 0;
-  background-color: rgb(209, 202, 202);
-  border-radius: 8px;
-}
-
 .button:before {
-  animation: opacityFallbackOut 0.5s step-end forwards;
+  animation: opacityFallbackOut 0.8s step-end forwards;
   backface-visibility: hidden;
   background-color: var(--tertiary-color);
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
@@ -60,8 +49,8 @@
   position: absolute;
   top: 0;
   transform: translateZ(0);
-  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
-    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: clip-path 0.8s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 100%;
 }
 
@@ -84,4 +73,34 @@
 .button:focus {
   outline: 2px solid var(--secondary-color);
   outline-offset: 2px;
+}
+
+.button.delete {
+  width: 100px;
+  font-size: 0.8rem;
+  padding: 10px;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.button.delete:before {
+  animation: opacityFallbackOut 0.8s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #cd5c5c;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.8s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button.delete:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 }

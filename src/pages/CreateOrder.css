@@ -1,0 +1,64 @@
+.order-form-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s;
+  border-radius: 20px;
+  border: none;
+}
+input:focus {
+  border-color: var(--primary-color);
+}
+
+.total-price {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.error-message {
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s;
+  border-radius: 20px;
+  border: none;
+  background-color: #b91c1cb2;
+  color: var(--secondary-color);
+}
+
+.submit-button {
+  width: 80%;
+  margin: 0 auto;
+}
+.get-directions-button {
+  margin: 1rem;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+.get-directions-button:hover {
+  cursor: pointer;
+}
