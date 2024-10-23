@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./Carousel.css";
 
 const Carousel = ({ images, intervalTime = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  }, [images.length]);
 
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, intervalTime);
     return () => clearInterval(slideInterval);
-  }, [intervalTime, images.length]);
+  }, [nextSlide, intervalTime]);
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
