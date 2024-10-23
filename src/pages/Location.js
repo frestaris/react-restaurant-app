@@ -28,10 +28,8 @@ function Location() {
 
     if (currentHour >= openingHour && currentHour < closingHour) {
       setIsOpen(true);
-      console.log("The restaurant is OPEN now.");
     } else {
       setIsOpen(false);
-      console.log("The restaurant is CLOSED now.");
     }
   };
 
