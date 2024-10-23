@@ -51,6 +51,7 @@ const CreateOrder = () => {
     }
     const emailParams = {
       from_name: formData.name,
+      from_email: formData.email,
       phone: formData.phone,
       items: formatCartItems(cartItems),
       totalPrice: totalCartPrice.toFixed(2),
