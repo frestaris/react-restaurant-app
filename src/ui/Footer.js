@@ -47,6 +47,13 @@ function Footer() {
           </Link>
         </li>
       </ul>
+      <div>
+        Copyright &copy;
+        <Link to="https://arisfresta-portfolio.netlify.app/">
+          Aris Fresta
+        </Link>{" "}
+        {new Date().getFullYear()}. All rights reserved.
+      </div>
     </div>
   );
 }

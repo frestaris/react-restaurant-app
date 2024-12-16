@@ -3,6 +3,8 @@
   padding: 20px;
   margin-top: 10px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   border-top: 3px solid rgb(107, 107, 107);
 }
@@ -24,6 +26,7 @@
   transition: transform 0.3s ease-in-out;
   filter: brightness(0) saturate(10%) invert(70%) sepia(90%) hue-rotate(10deg)
     brightness(90%);
+  margin-bottom: 5px;
 }
 
 .social-media-icon:hover {
