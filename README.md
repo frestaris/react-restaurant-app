@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 🍽️ React Restaurant App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and elegant restaurant website built using **React**, styled with **Ant Design**, and powered by **Redux** for state management.
 
-## Available Scripts
+Users can:
 
-In the project directory, you can run:
+- Browse the menu
+- Add items to their cart
+- Place an order
+- Receive email confirmation via email
 
-### `npm start`
+![Home Page](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Home.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <strong>Live Demo:</strong> <a href="https://react-app-restaurant-website-sample.netlify.app/">HERE</a>
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Hours & Location
 
-### `npm run build`
+![Hours](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Hours.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Menu
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Menu](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Menu.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Cart
 
-### `npm run eject`
+![Cart](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Cart.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Place Order
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Place Order](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/PlaceOrder.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Order Confirmation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Confirmation](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Confirmation.png)
 
-## Learn More
+### Email Confirmation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Confirmation email sent to the customer using [EmailJS](https://www.emailjs.com/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React** – UI library
+- **Redux** – State management
+- **Ant Design** – UI styling
+- **React Router** – Routing
+- **EmailJS** – Send order confirmation via email
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Features
 
-### Making a Progressive Web App
+✅ View restaurant hours and location
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+✅ Explore dynamic food menu
 
-### Advanced Configuration
+✅ Add/remove items from cart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+✅ Place an order with a form
 
-### Deployment
+✅ Order confirmation screen
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+✅ Email confirmation sent via EmailJS
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you like it, please give it a star ⭐️
