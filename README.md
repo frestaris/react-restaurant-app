@@ -8,8 +8,9 @@ Users can:
 - Add items to their cart
 - Place an order
 - Receive email confirmation via email
+- Fully responsive and works seamlessly across devices.
 
-![Home Page](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Home.png)
+![Home Page](https://github.com/frestaris/react-restaurant-app/raw/master/src/assets/screenshots/homepage.png)
 
 <p align="center">
   <strong>Live Demo:</strong> <a href="https://react-app-restaurant-website-sample.netlify.app/">HERE</a>
@@ -17,35 +18,39 @@ Users can:
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-### Hours & Location
+### 🕐 Hours & Location
 
-![Hours](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Hours.png)
+![Hours](https://github.com/frestaris/react-restaurant-app/raw/master/src/assets/screenshots/location.png)
 
-### Menu
+### 🍔 Menu
 
-![Menu](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Menu.png)
+![Menu](https://github.com/frestaris/react-restaurant-app/raw/master/src/assets/screenshots/menu.png)
 
-### Cart
+![Menu](https://github.com/frestaris/react-restaurant-app/raw/master/src/assets/screenshots/menu-2.png)
 
-![Cart](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Cart.png)
+### 🛒 Cart
 
-### Place Order
+![Cart](https://github.com/frestaris/react-restaurant-app/raw/master/src/assets/screenshots/cart.png)
 
-![Place Order](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/PlaceOrder.png)
+### 📦 Place Order
 
-### Order Confirmation
+![Place Order](https://github.com/frestaris/react-restaurant-app/raw/master/src/assets/screenshots/place-order.png)
 
-![Confirmation](https://github.com/frestaris/react-restaurant-app/raw/main/src/assets/screenshots/Confirmation.png)
+### ✅ Order Confirmation
 
-### Email Confirmation
+![Confirmation](https://github.com/frestaris/react-restaurant-app/raw/master/src/assets/screenshots/order-confirmation.png)
+
+### 📧 Email Confirmation
+
+![Receipt on Email](https://github.com/frestaris/react-restaurant-app/raw/master/src/assets/screenshots/receipt-email.png)
 
 Confirmation email sent to the customer using [EmailJS](https://www.emailjs.com/).
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **React** – UI library
 - **Redux** – State management
@@ -55,18 +60,16 @@ Confirmation email sent to the customer using [EmailJS](https://www.emailjs.com/
 
 ---
 
-## Features
+## ✨ Features
 
-✅ View restaurant hours and location
+- ✅ View restaurant hours and location
+- ✅ Explore dynamic food menu
+- ✅ Add/remove items from cart
+- ✅ Place an order with a form
+- ✅ Order confirmation screen
+- ✅ Email confirmation sent via EmailJS
+- ✅ Fully responsive design
 
-✅ Explore dynamic food menu
-
-✅ Add/remove items from cart
-
-✅ Place an order with a form
-
-✅ Order confirmation screen
-
-✅ Email confirmation sent via EmailJS
+---
 
 If you like it, please give it a star ⭐️
